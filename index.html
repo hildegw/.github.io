@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
   </head>
   <body>
-    <script src="/js/basic.js"></script>
+    <!-- <script src="/js/basic.js"></script> -->
 
     <a-scene
       vr-mode-ui="enabled: false"
@@ -22,7 +22,7 @@
       renderer="antialias: true; alpha: true"
     >
       <a-camera position="0 0 0" gps-new-camera="gpsMinDistance: 5"></a-camera>
-      <!-- <a-entity
+      <a-entity
         material="color: red"
         geometry="primitive: sphere"
         gps-new-entity-place="latitude: 20.50532; longitude: -87.22908;"
@@ -33,7 +33,7 @@
         geometry="primitive: sphere"
         gps-new-entity-place="latitude: 20.50533; longitude: -87.22909;"
         scale="1 2 1"
-      ></a-entity> -->
+      ></a-entity>
     </a-scene>
   </body>
 </html>
