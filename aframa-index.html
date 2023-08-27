@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js A-Frame Location-based</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"
+    ></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+  </head>
+  <body>
+    <!-- <script src="/js/basic.js"></script> -->
+
+    <a-scene
+      vr-mode-ui="enabled: false"
+      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
+      renderer="antialias: true; alpha: true"
+    >
+      <a-camera position="0 0 0" gps-new-camera="gpsMinDistance: 5"></a-camera>
+      <a-entity
+        material="color: red"
+        geometry="primitive: sphere"
+        gps-new-entity-place="latitude: 20.505469; longitude: -87.229081;"
+        scale="2 2 3"
+      ></a-entity>
+      <a-entity
+        material="color: green"
+        geometry="primitive: sphere"
+        gps-new-entity-place="latitude: 20.505469; longitude: -87.229182;"
+        scale="1 2 1"
+      ></a-entity>
+      <a-entity
+        material="color: red"
+        geometry="primitive: sphere"
+        gps-new-entity-place="latitude: 20.505469; longitude: -87.229081;"
+        scale="2 2 3"
+      ></a-entity>
+      <a-entity
+        material="color: green"
+        geometry="primitive: sphere"
+        gps-new-entity-place="latitude: 20.505469; longitude: -87.229182;"
+        scale="1 2 1"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
+<!-- 20.505469, -87.229182 -->
+<!-- gps-new-entity-place="latitude: 20.50533; longitude: -87.22909;" -->
